@@ -1,28 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  // Generate a random nonce for each request using Web Crypto API
-  const array = new Uint8Array(16);
-  crypto.getRandomValues(array);
-  const nonce = btoa(String.fromCharCode(...array));
-  
-  // Create response
-  const response = NextResponse.next();
-  
-  // Set nonce in response headers for server components
-  response.headers.set('x-nonce', nonce);
-  
-  // Set nonce in request headers so it can be accessed by server components
+  // Generate a random nonce compatible with the Edge runtime
+  const nonce = crypto.randomUUID();
+
+  // Forward the nonce to the downstream request
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set('x-nonce', nonce);
-  
-  // Create new request with nonce header
-  const modifiedRequest = new NextRequest(request.url, {
-    method: request.method,
-    headers: requestHeaders,
-    body: request.body,
+
+  // Create response and attach forwarded request headers
+  const response = NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
   });
-  
+
+  // Expose nonce to the application via response headers
+  response.headers.set('x-nonce', nonce);
+
   return response;
 }
 
