@@ -44,76 +44,42 @@ const nextConfig: NextConfig = {
     return config;
   },
   
-  // URL Rewrites - Map farmlands URLs to projects
-  async rewrites() {
+  // Redirects - Redirect legacy farmlands URLs to canonical projects URLs
+  async redirects() {
     return [
       {
         source: '/farmlands',
         destination: '/projects',
+        permanent: true,
       },
       {
         source: '/farmlands/canvas.html',
         destination: '/projects/canvas',
+        permanent: true,
       },
       {
         source: '/farmlands/arinaa-country-farms.html',
         destination: '/projects/arinaa-country-farms',
+        permanent: true,
       },
       {
         source: '/farmlands/ayana.html',
         destination: '/projects/ayana',
+        permanent: true,
       },
       {
         source: '/farmlands/bellevuee.html',
         destination: '/projects/bellevuee',
+        permanent: true,
       },
       {
         source: '/farmlands/rhythm-of-soul.html',
         destination: '/projects/rhythm-of-soul',
+        permanent: true,
       },
       {
         source: '/farmlands/whistling-woods.html',
         destination: '/projects/whistling-woods',
-      },
-    ];
-  },
-
-  // Redirects - Redirect old project URLs to new farmlands URLs
-  async redirects() {
-    return [
-      {
-        source: '/projects',
-        destination: '/farmlands',
-        permanent: true,
-      },
-      {
-        source: '/projects/canvas',
-        destination: '/farmlands/canvas.html',
-        permanent: true,
-      },
-      {
-        source: '/projects/arinaa-country-farms',
-        destination: '/farmlands/arinaa-country-farms.html',
-        permanent: true,
-      },
-      {
-        source: '/projects/ayana',
-        destination: '/farmlands/ayana.html',
-        permanent: true,
-      },
-      {
-        source: '/projects/bellevuee',
-        destination: '/farmlands/bellevuee.html',
-        permanent: true,
-      },
-      {
-        source: '/projects/rhythm-of-soul',
-        destination: '/farmlands/rhythm-of-soul.html',
-        permanent: true,
-      },
-      {
-        source: '/projects/whistling-woods',
-        destination: '/farmlands/whistling-woods.html',
         permanent: true,
       },
     ];
