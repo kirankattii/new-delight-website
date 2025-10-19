@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   description:
     "Own premium farmland in Kallur Village with Delight Eco Farms. Explore farm plots near Lepakshi offering value and long-term investment growth.",
   alternates: {
-    canonical: "https://www.delightecofarms.com/farmlands/canvas.html",
+    canonical: "https://www.delightecofarms.com/projects/canvas",
   },
   openGraph: {
     title: "Farmland in Kallur Village, Lepakshi | Delight Eco Farms",
     description:
       "Own premium farmland in Kallur Village with Delight Eco Farms. Explore farm plots near Lepakshi offering value and long-term investment growth.",
-    url: "https://www.delightecofarms.com/farmlands/canvas.html",
+    url: "https://www.delightecofarms.com/projects/canvas",
     images: ["/projects/canvas/canvas1.jpg"],
   },
 };

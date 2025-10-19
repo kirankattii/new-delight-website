@@ -106,6 +106,22 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
+  // Redirect legacy farmlands URLs to new projects URLs
+  async redirects() {
+    return [
+      {
+        source: '/farmlands',
+        destination: '/projects',
+        permanent: true,
+      },
+      {
+        source: '/farmlands/:slug.html',
+        destination: '/projects/:slug',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

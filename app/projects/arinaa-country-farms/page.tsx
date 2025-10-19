@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     "Arinaa Country Farms managed farmland in Kanakapura, Karnataka. Features custom-built farm houses and sustainable agriculture. Buy farm plots near Kanakapura today.",
   alternates: {
     canonical:
-      "https://www.delightecofarms.com/farmlands/arinaa-country-farms.html",
+      "https://www.delightecofarms.com/projects/arinaa-country-farms",
   },
   openGraph: {
     title: "Arinaa Country Farms | Farmland - Delight Eco Farms",
     description:
       "Arinaa Country Farms managed farmland in Kanakapura, Karnataka. Features custom-built farm houses and sustainable agriculture. Buy farm plots near Kanakapura today.",
-    url: "https://www.delightecofarms.com/farmlands/arinaa-country-farms.html",
+    url: "https://www.delightecofarms.com/projects/arinaa-country-farms",
     images: ["/projects/arinaa/arinaa1.jpg"],
   },
 };

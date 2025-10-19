@@ -114,7 +114,7 @@ export default function ProjectsSection() {
                   {project.description}
                 </p>
                 <Link
-                  href={`/farmlands/${project.slug}.html`}
+                  href={`/projects/${project.slug}`}
                   className="inline-block bg-app-green-1 items-center text-white px-6 py-2 rounded-lg font-medium hover:bg-app-green-2 transition-colors duration-200 mt-auto w-fit"
                   itemProp="url"
                 >
@@ -131,12 +131,12 @@ export default function ProjectsSection() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          "itemListElement": projects.map((project, i) => ({
+            "itemListElement": projects.map((project, i) => ({
             "@type": "Place",
             position: i + 1,
             name: project.name,
             address: project.location,
-            url: `/farmlands/${project.slug}.html`,
+              url: `/projects/${project.slug}`,
             image: project.image,
             description: project.description,
           })),

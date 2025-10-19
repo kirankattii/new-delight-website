@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   description:
     "Bellevuee 27-acre sustainable farmland community in Kanakapura, Karnataka. Features coconut trees, teak plantations, and landscaped gardens. Buy farm plots near Kanakapura today.",
   alternates: {
-    canonical: "https://www.delightecofarms.com/farmlands/bellevuee.html",
+    canonical: "https://www.delightecofarms.com/projects/bellevuee",
   },
   openGraph: {
     title: "Bellevuee Farmland | Sustainable Plots - Delight Eco Farms",
     description:
       "Bellevuee 27-acre sustainable farmland community in Kanakapura, Karnataka. Features coconut trees, teak plantations, and landscaped gardens. Buy farm plots near Kanakapura today.",
-    url: "https://www.delightecofarms.com/farmlands/bellevuee.html",
+    url: "https://www.delightecofarms.com/projects/bellevuee",
     images: ["/projects/bellevuee/bellevuee1.jpg"],
   },
 };

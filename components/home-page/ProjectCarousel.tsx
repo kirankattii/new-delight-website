@@ -28,7 +28,7 @@ const projectList: Project[] = [
         description:
           "Experience the ultimate fusion of nature and luxury at Whistling Woods, an exclusive managed farmland near Sakleshpur. Set amidst the fragrant coffee and pepper plantations of Karnataka, this exceptional development provides a rare opportunity to own a piece of agricultural paradise, surrounded by lush greenery and tranquil beauty.",
         image: "/projects/whistling-woods.jpg",
-        link: "/farmlands/whistling-woods.html",
+        link: "/projects/whistling-woods",
       },
       {
         title: "Bellevuee",
@@ -40,7 +40,7 @@ const projectList: Project[] = [
         description:
           "Escape to Bellevue – a 22-acre sustainable farmland community designed to nurture biodiversity and eco-friendly farming. With lush plots surrounded by mature coconut, silver, and teak trees, Bellevue offers the perfect blend of nature, serenity, and self-sufficient living.",
         image: "/projects/bellevuee.jpg",
-        link: "/farmlands/bellevuee.html",
+        link: "/projects/bellevuee",
       },
       {
         title: "Arinaa Country Farms",
@@ -52,7 +52,7 @@ const projectList: Project[] = [
         description:
           "Rich in water, fertile soil, and ideal climate, this farmland is perfect for organic farming and sustainable living with cows, goats, and hens. Just a short drive from the city, it’s an ideal weekend escape to relax and reconnect with nature.",
         image: "/projects/arinaa.jpg",
-        link: "/farmlands/arinaa-country-farms.html",
+        link: "/projects/arinaa-country-farms",
       },
       {
         title: "Rhythm of Soul",
@@ -64,7 +64,7 @@ const projectList: Project[] = [
         description:
           "This premium managed farmland near Sakleshpur blends sustainable farming, luxury, and smart investment. Nestled in the lush Western Ghats at Hirivate, it offers a rare opportunity to own a slice of paradise while benefiting from long-term agricultural returns.",
         image: "/projects/rhythm.jpg",
-        link: "/farmlands/rhythm-of-soul.html",
+        link: "/projects/rhythm-of-soul",
       },
       {
         title: "Canvas",
@@ -77,7 +77,7 @@ const projectList: Project[] = [
         description:
           "Discover a thoughtfully curated lifestyle at CANVAS, nestled in the culturally rich and naturally vibrant landscape of Kallur Village, in the heart of Lepakshi, Sathya Sai District (Hindupura region). This 100-acre expanse reimagines countryside living, offering a seamless blend of agriculture, tranquillity, and community.",
         image: "/projects/canvas.jpg",
-        link: "/farmlands/canvas.html",
+        link: "/projects/canvas",
       },
       {
         title: "Ayana",
@@ -89,7 +89,7 @@ const projectList: Project[] = [
         description:
           "Ayana is an exclusive estate farmland in Sakleshpur, nestled within the lush, mist-covered landscapes of the Western Ghats. Surrounded by silver oak trees, pepper vines, and robusta coffee plantations, Ayana offers a peaceful escape where nature, privacy, and tranquility come together effortlessly.",
         image: "/projects/ayana.jpg",
-        link: "/farmlands/ayana.html",
+        link: "/projects/ayana",
       },
     
 ];

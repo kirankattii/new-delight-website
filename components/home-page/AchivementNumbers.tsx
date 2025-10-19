@@ -17,7 +17,7 @@ const stats: StatItem[] = [
     label: "Projects Completed",
     value: 2,
     icon: "/icons/projects-completed.svg",
-    href: "/farmlands",
+    href: "/projects",
   },
   {
     label: "Ongoing Projects",

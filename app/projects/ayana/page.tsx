@@ -16,13 +16,13 @@ export const metadata: Metadata = {
 	description:
 		"Explore Delight Eco Farms, Ayana Farmlands in Sakleshpur. Own sustainable agriculture land for sale in Karnataka amidst coffee estates and eco-living.",
 	alternates: {
-		canonical: "https://www.delightecofarms.com/farmlands/ayana.html",
+		canonical: "https://www.delightecofarms.com/projects/ayana",
 	},
 	openGraph: {
 		title: "Farm Land for Sale in Karnataka | Delight Eco Farms",
 		description:
 			"Explore Delight Eco Farms, Ayana Farmlands in Sakleshpur. Own sustainable agriculture land for sale in Karnataka amidst coffee estates and eco-living.",
-		url: "https://www.delightecofarms.com/farmlands/ayana.html",
+		url: "https://www.delightecofarms.com/projects/ayana",
 		images: ["/projects/ayana/ayana1.jpg"],
 	},
 };

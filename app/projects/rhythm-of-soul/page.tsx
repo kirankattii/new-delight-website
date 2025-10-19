@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 	description:
 		"Rhythm of Soul 50-acre premium farmland project in Sakleshpur, Karnataka. Features coffee and pepper plantations with luxury 4-acre resort. Buy farm houses in Sakleshpur today.",
 	alternates: {
-		canonical: "https://www.delightecofarms.com/farmlands/rhythm-of-soul.html",
+		canonical: "https://www.delightecofarms.com/projects/rhythm-of-soul",
 	},
 	openGraph: {
 		title: "Rhythm of Soul | Coffee Plantation - Delight Eco Farms",
 		description:
 			"Rhythm of Soul 50-acre premium farmland project in Sakleshpur, Karnataka. Features coffee and pepper plantations with luxury 4-acre resort. Buy farm houses in Sakleshpur today.",
-		url: "https://www.delightecofarms.com/farmlands/rhythm-of-soul.html",
+		url: "https://www.delightecofarms.com/projects/rhythm-of-soul",
 		images: ["/projects/rhythm-of-soul/ros1.jpg"],
 	},
 };

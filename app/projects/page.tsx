@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Premium farmland projects near Bangalore: Ayana, Bellevuee, Whistling Woods, Rhythm of Soul, Canvas, and Arinaa Country Farms. Managed farmlands with sustainable organic plantations.",
   alternates: {
-    canonical: "https://www.delightecofarms.com/farmlands",
+    canonical: "https://www.delightecofarms.com/projects",
   },
   openGraph: {
     title: "Farmland Projects | Managed Plots Near Bangalore - Delight",
     description:
       "Premium farmland projects near Bangalore: Ayana, Bellevuee, Whistling Woods, Rhythm of Soul, Canvas, and Arinaa Country Farms. Managed farmlands with sustainable organic plantations.",
-    url: "https://www.delightecofarms.com/farmlands",
+    url: "https://www.delightecofarms.com/projects",
     images: ["/projects/ayana.jpg"],
   },
 };
@@ -159,7 +159,7 @@ Discover our signature communities spread across Karnataka.
                     {project.description}
                   </p>
                   <Link
-                    href={`/farmlands/${project.slug}.html`}
+                    href={`/projects/${project.slug}`}
                     className="flex item-start  border border-app-green-1/20 justify-start bg-amber-50 text-gray-800 px-6 py-2 rounded-lg font-medium hover:bg-amber-100 transition-colors duration-200 mt-auto"
                     itemProp="url"
                   >
@@ -217,7 +217,7 @@ Discover our signature communities spread across Karnataka.
             position: i + 1,
             name: project.name,
             address: project.location,
-            url: `/farmlands/${project.slug}.html`,
+            url: `/projects/${project.slug}`,
             image: project.image,
             description: project.description,
           })),
