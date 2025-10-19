@@ -44,46 +44,6 @@ const nextConfig: NextConfig = {
     return config;
   },
   
-  // Redirects - Redirect legacy farmlands URLs to canonical projects URLs
-  async redirects() {
-    return [
-      {
-        source: '/farmlands',
-        destination: '/projects',
-        permanent: true,
-      },
-      {
-        source: '/farmlands/canvas.html',
-        destination: '/projects/canvas',
-        permanent: true,
-      },
-      {
-        source: '/farmlands/arinaa-country-farms.html',
-        destination: '/projects/arinaa-country-farms',
-        permanent: true,
-      },
-      {
-        source: '/farmlands/ayana.html',
-        destination: '/projects/ayana',
-        permanent: true,
-      },
-      {
-        source: '/farmlands/bellevuee.html',
-        destination: '/projects/bellevuee',
-        permanent: true,
-      },
-      {
-        source: '/farmlands/rhythm-of-soul.html',
-        destination: '/projects/rhythm-of-soul',
-        permanent: true,
-      },
-      {
-        source: '/farmlands/whistling-woods.html',
-        destination: '/projects/whistling-woods',
-        permanent: true,
-      },
-    ];
-  },
 
   // Headers for better caching and security
   async headers() {
