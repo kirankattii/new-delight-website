@@ -1,0 +1,35 @@
+{
+  "name": "next_delight",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "aos": "^2.3.4",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.542.0",
+    "mongodb": "^6.10.0",
+    "next": "15.5.0",
+    "nodemailer": "^6.9.16",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/aos": "^3.0.7",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.19",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
