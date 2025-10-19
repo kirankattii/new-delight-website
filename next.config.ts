@@ -121,35 +121,27 @@ const nextConfig: NextConfig = {
 
   // Headers for better caching and security
   async headers() {
-    const isProd = process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_VERCEL_ENV === 'production';
-
-    // Build CSP dynamically so local/LAN HTTP testing doesn't break by upgrading to HTTPS
-    const cspDirectives = [
-      "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://in.fw-cdn.com",
-      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      "font-src 'self' https://fonts.gstatic.com",
-      "img-src 'self' data: https: blob:",
-      "media-src 'self' https:",
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://connect.facebook.net https://graph.facebook.com https://in.fw-cdn.com https://api.whatsapp.com",
-      "frame-src 'self' https://www.googletagmanager.com https://connect.facebook.net https://www.youtube.com https://www.google.com",
-      "object-src 'none'",
-      "base-uri 'self'",
-      "form-action 'self' https://wa.me tel:",
-      "frame-ancestors 'none'",
-    ];
-
-    if (isProd) {
-      cspDirectives.push('upgrade-insecure-requests');
-    }
-
     return [
       {
         source: '/(.*)',
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: cspDirectives.join('; '),
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net https://in.fw-cdn.com",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "font-src 'self' https://fonts.gstatic.com",
+              "img-src 'self' data: https: blob:",
+              "media-src 'self' https:",
+              "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://connect.facebook.net https://graph.facebook.com https://in.fw-cdn.com https://api.whatsapp.com",
+              "frame-src 'self' https://www.googletagmanager.com https://connect.facebook.net https://www.youtube.com https://www.google.com",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self' https://wa.me tel:",
+              "frame-ancestors 'none'",
+              "upgrade-insecure-requests",
+            ].join('; '),
           },
           {
             key: 'X-Content-Type-Options',
@@ -165,7 +157,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Strict-Transport-Security',
-            value: isProd ? 'max-age=31536000; includeSubDomains; preload' : 'max-age=0',
+            value: 'max-age=31536000; includeSubDomains; preload',
           },
           {
             key: 'Referrer-Policy',
